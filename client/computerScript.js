@@ -37,8 +37,10 @@ async function get_main_infor(){
                                             <li class="li-long"> Name : ${list_of_computers_1.name}  </li><br>
                                             <li class="li-long"> Model : ${list_of_computers_1.category.model} </li><br>
                                             <li class="li-long"> Type : ${list_of_computers_1.category.type} </li><br>
-                                            <li class="li-long"> Type : ${list_of_computers_1.prices.sale_price} </li><br>
-                                            <li class="li-long"> Type : ${list_of_computers_1.prices.regular_price} </li><br>
+                                            <li class="li-long"> Sales Price : CAD $ <span class="sale"> ${list_of_computers_1.prices.sale_price.$numberDecimal}<span> </li><br>
+                                            <li class="li-long"> Regular Price : CAD $ ${list_of_computers_1.prices.regular_price.$numberDecimal} </li><br>
+                                            <li class="li-long"> Quantity : ${list_of_computers_1.quantity} </li><br>
+                                            <li class="li-long"> Rating : ${list_of_computers_1.rating} </li><br>
                                             <li class="li-long"> ${list_of_computers_1.description} </li>
                                         </ul>
             `
@@ -52,12 +54,20 @@ async function get_main_infor(){
                             </ul>
                                 `
 
-        display_full.innerHTML =  `<ul id="ul-long" style="background-color: #e0e0e0">
-                                            <li class="li-long"> Display </li>
-                                            <li class="li-long"> Graphic Card :${list_of_computers_1.diplay.graphics_card} </li>
-                                            <li class="li-long"> Screen Size :${list_of_computers_1.display.size}>  </li>
-                                            <li class="li-long"> ${list_of_computers_1}>  </li>
-                                            <li class="li-long"> ${list_of_computers_1}>  </li>                                        
+        display_full.innerHTML =  `<ul id="ul-long" style="background-color: #white">
+                                            <li class="li-long"> <span> Display </span> </li>
+                                            <li class="li-long"> Graphic Card :${list_of_computers_1.display.graphics_card} </li>
+                                            <li class="li-long"> Screen Size :${list_of_computers_1.display.size}  </li> <br>
+                                            <li class="li-long"> <span> Operating System </span> </li>
+                                            <li class="li-long"> OS : ${list_of_computers_1.operation_system}  </li>  <br>
+                                            <li class="li-long"> <span> Processor </span> </li>
+                                            <li class="li-long"> Speed : ${list_of_computers_1.processor.speed}  </li>  
+                                            <li class="li-long"> Type : ${list_of_computers_1.processor.type}>  </li>  <br>                                      
+                                            <li class="li-long"> <span> Storage </span> </li>
+                                            <li class="li-long"> Disk : ${list_of_computers_1.storage.disk}  </li>  
+                                            <li class="li-long"> Ram Size : ${list_of_computers_1.storage.ram_size}  </li>                                        
+                                            <li class="li-long"> Ram Type : ${list_of_computers_1.storage.type}  </li> <br>
+                                            <li class="li-long"> Release Year : ${new Date(list_of_computers_1.year_release).toDateString() } </li>                                         
                                     </ul>
                                     `
        // display_full.innerHTML = 'Testing'
