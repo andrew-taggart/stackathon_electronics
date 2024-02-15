@@ -1,6 +1,6 @@
 const { Schema } = require('mongoose')
 
-const TV = new Schema(
+const TV= new Schema(
     {
         name : {type: String, required: true},
         features : {type: String, required: true},
@@ -10,5 +10,6 @@ const TV = new Schema(
     },
     { timestamps: true }
 )
+
 
 module.exports = TV

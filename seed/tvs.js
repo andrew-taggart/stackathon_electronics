@@ -4,7 +4,7 @@ const { TV } = require('../models')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
-    const tv = [
+    const tvs = [
         {
         name : 'yeet yeet big screen',
         features : 'best darn tv you will buy',
@@ -22,7 +22,7 @@ const main = async () => {
           
     ]
 
-    await TV.insertMany(tv)
+    await TV.insertMany(tvs)
     console.log('inserted TV!')
 }
 

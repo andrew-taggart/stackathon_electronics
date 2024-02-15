@@ -1,4 +1,4 @@
-const TV = require('../models/tv')
+const { TV } = require('../models')
 
 const getAllTvs = async (req, res) => {
     try {
@@ -17,6 +17,19 @@ const getTvById = async (req, res) => {
             return res.json(tv)
         }
         return res.status(404).send('tv item with the specified ID does not exists');
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
+
+const getTvByProductName = async (req, res) => {
+    try {
+        const product_name = req.param
+        const tv = await TV.findOne({'name': product_name.name})
+        if (tv) {
+            return res.json(tv)
+        }
+        return res.status(404).send('TV with the specified name does not exist');
     } catch (error) {
         return res.status(500).send(error.message);
     }
@@ -64,5 +77,6 @@ module.exports = {
     getTvById,
     createTv,
     updateTv,
-    deleteTv
+    deleteTv,
+    getTvByProductName 
 }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="tvscript.js"></script>   
+    <link rel="stylesheet" type="text/css" href="tvstyle.css">
+    <title>TVs</title>
+</head>
+<body>
+  <header id="headerTitle">
+    <div id="nav-toggle">
+        <div class="bar" id="bar1"></div>
+        <div class="bar" id="bar2"></div> 
+        <div class="bar" id="bar3"></div>
+    </div>
+        <h1>TVs</h1>
+    </header>
+
+    <nav id="nav-content">
+        <a href="#TV" id="tv" class="nav-link">TV</a>
+        <a href="#Cell Phone" id="cellPhone"  class="nav-link">Cell Phone</a>
+        <a href="#Smart Home" id="smartHome" class="nav-link">Smart Home</a>
+        <a href="#Computer" id="computer" class="nav-link">Computer</a>
+        
+        <div id="nav-search">
+            <label for="brand">Brand</label><br><br>
+                  <select id="brand" name="brand">
+                    <option value="sony_tv">Sony-Tv's</option>
+                    <option value="sumsung_tv">Sumsung- Tv's</option>
+                    <option value="hp_computers">HP-Computers</option>
+                    <option value="dell_computers">Dell-Computers</option>
+                    <option value="nest">Nest</option>
+                    <option value="apple_mobile">Apple-Mobile</option>
+                    <option value="samsung-mobile">Samsung-Mobile</option>
+                  </select>
+                  <br><br>
+                  <label for="price">Price Range</label><br>
+                <select id="price" name="price">
+                    <option value="1000">1000+</option>
+                    <option value="500">500 - 1000</option>
+                    <option value="250">250 - 500</option>
+                    <option value="0">0 - 250</option>
+              </select>
+            </div>
+        </nav>
+    <main>
+      <div class="container">
+        <h1>Find Products</h1>
+        <div class="hero">
+            <div class="main-container">
+                <div class="vertical-container">
+                    <div class="display-vertical-2">
+                        <div class="display-thumbnail"></div>
+                     </div>
+                </div>
+                <div class="filter-container">
+                    <form>
+                        <input id="input-product-name" value="" placeholder="Product Name">
+                        <input id="search-product-btn" class="btn-bg-color" type="button" value="Search"><br>
+                    </form>
+                </div>
+            <div class="horizontal-container">
+                <div class="display-horizontal-1">
+                    <div class="image-1"></div>
+                </div>
+                <div class="display-horizontal-2">
+                    <div class="display-main"></div>
+                </div>
+            </div>
+        <div class="vertical-container">
+            <div class="display-vertical-1">
+                <div class="display-full"></div>
+            </div>
+            <div class="display-vertical-2">
+                <div class="display-thumbnail"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+ </div>
+</main>
+</body>
+</html>
