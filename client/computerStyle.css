@@ -130,6 +130,18 @@ button {
   
 }
 
+.filter-ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.filter-li{
+  margin-right: 30px;
+}
 span{
   font-size: 20px;
   font-weight: 600;
@@ -147,6 +159,9 @@ span{
   color: red;
 }
 
+.li-font{
+  text-align: center;
+}
 /* .img-Size:hover{
   transform: scale(1.1);
   cursor: pointer;
