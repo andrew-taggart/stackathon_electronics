@@ -27,15 +27,38 @@ const getComputersById = async (req, res) => {
 
 const getComputersByProductName = async (req, res) => {
     try {
-        const product_name = req.param
-        //console.log("============")
-        // console.log(request_route)
+        const product_name = req.param.name
+        
+        console.log(" Product name ",product_name)
         //const { id } = req.params
-        const computers = await Computer.findOne({'name': product_name.name})
+        const computers = await Computer.find({name: product_name})
         //console.log(computers)
         
         if (computers) {
             return res.json(computers)
+        }else{
+            //console.log(computers)
+        }
+        return res.status(404).send('Computer with the specified name does not exists');
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
+
+const getComputersByBrandName = async (req, res) => {
+    try {
+        const brand_name = req.param.name
+        
+        console.log("Brand name",brand_name)
+        
+        const computers = await Computer.find({'category.brand': brand_name})
+        //console.log(computers)
+        
+        if (computers) {
+            return res.json(computers)
+            // console.log("if yes results :", computers)
+        }else{
+            //console.log("if no results :", computers)
         }
         return res.status(404).send('Computer with the specified name does not exists');
     } catch (error) {
@@ -86,5 +109,6 @@ module.exports = {
     createComputer,
     updateComputer,
     deleteComputer,
-    getComputersByProductName
+    getComputersByProductName,
+    getComputersByBrandName
 }

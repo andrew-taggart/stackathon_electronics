@@ -113,6 +113,8 @@ button {
   overflow-y: scroll;
 }
 #ul-long{
+  font-weight: 600;
+  color: rgba(53, 55, 55, 0.947);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -122,12 +124,28 @@ button {
 } 
 
 #ul-long li{
-  text-align: center;
+  text-align: left;
   margin-right: 30px;
  
   
 }
 
+.filter-ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.filter-li{
+  margin-right: 30px;
+}
+span{
+  font-size: 20px;
+  font-weight: 600;
+}
 
 
 .img-Size{
@@ -137,7 +155,13 @@ button {
   
 }
 
+.sale{
+  color: red;
+}
 
+.li-font{
+  text-align: center;
+}
 /* .img-Size:hover{
   transform: scale(1.1);
   cursor: pointer;
