@@ -1,9 +1,39 @@
-<mxfile host="app.diagrams.net" modified="2024-03-05T20:11:19.179Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" version="23.1.7" etag="DSpBcvEQ7QmkimuSDoZy" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-05T20:21:11.413Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="1utdKLl4iNyuaOLdeeaU" version="23.1.7" type="github">
   <diagram name="Page-1" id="OB3WspAho7fKMw6w-TUO">
-    <mxGraphModel>
+    <mxGraphModel dx="1221" dy="638" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="78hmCkR7OaDKH1b2ZhDf-2" value="App.jsx" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="790" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="78hmCkR7OaDKH1b2ZhDf-4" value="Home.jsx" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="39" y="280" width="400" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="78hmCkR7OaDKH1b2ZhDf-10" value="Header.jsx" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="460" y="280" width="370" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="78hmCkR7OaDKH1b2ZhDf-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="78hmCkR7OaDKH1b2ZhDf-2" target="78hmCkR7OaDKH1b2ZhDf-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="350" as="sourcePoint" />
+            <mxPoint x="450" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="78hmCkR7OaDKH1b2ZhDf-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.802;exitY=1.076;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.582;entryY=-0.005;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="78hmCkR7OaDKH1b2ZhDf-2" target="78hmCkR7OaDKH1b2ZhDf-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="350" as="sourcePoint" />
+            <mxPoint x="450" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="78hmCkR7OaDKH1b2ZhDf-14" value="SerchMeal.jsx" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="30" y="450" width="400" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="78hmCkR7OaDKH1b2ZhDf-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.52;entryY=-0.009;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="78hmCkR7OaDKH1b2ZhDf-4" target="78hmCkR7OaDKH1b2ZhDf-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="470" as="sourcePoint" />
+            <mxPoint x="580" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
